@@ -1,0 +1,16 @@
+Font
+----------------------
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap')
+
+font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+color
+-----------------------
+Blury White : #F4FDFF
+Royal blue  : #3772FF
+Black 	    : #080708
+
+<iframe width="880" height="495" src="https://www.youtube.com/embed/5tKNLmii08g?list=PLr_bb67goom-cl1lYFaIK-9nzb5N4ADGI" title="CSS INTRODUCTION" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

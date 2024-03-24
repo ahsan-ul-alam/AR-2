@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap');
+@font-face {
+    font-family: ahsanfont;
+    src: url('../fonts/ahsanfont.ttf');
+}
+body {
+    font-family: "Noto Serif Bengali","Libre Franklin", sans-serif;
+}
+header{
+    border-bottom: 0.5px solid #fff;
+    font-family: "Libre Franklin";
+}
+.devider{
+    width: 300px;
+    border: dotted white;
+    margin: 5px auto;
+}
+.card-wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+.card{
+    width: 250px;
+    padding: 5px;
+    background: #f3e7e7;
+    margin: 5px 7px;
+}
+
+.container{
+    justify-content: space-around !important;
+}
+
+
+
+
+/* Additional css here  */
+.bangla{
+    font-family: ahsanfont;
+}
+.left{
+    text-align: left;
+}
