@@ -15,8 +15,14 @@ body {
     background: linear-gradient(90deg, rgb(9, 9, 22) 0%, rgba(6,8,18,1) 51%, rgb(5, 5, 28) 100%);
 }
 header {
+    position: fixed;
+    width: 100%;
     border-bottom: 0.5px solid #fff;
     font-family: "Libre Franklin";
+    transition: .3s ease-in-out;
+}
+main{
+    padding-top: 75px;
 }
 #hero {
     display: block;
@@ -79,17 +85,13 @@ header {
 /* ================================= */
 /* scrollbar change  */
 
-::-webkit-scrollbar-track{
-    background: #f1f2f6;
-}
-::-webkit-scrollbar-thumb{
-    background: #9A0707;
-}
 .progressiveNav{
     position: fixed;
     height: 3px;
     width: 100%;
     background: linear-gradient(to right,rgb(241, 21, 21),rgb(46, 5, 252));
+    transition: .2s linear;
+    z-index: 999;
 }
 
 /* scrollbar change ends */
