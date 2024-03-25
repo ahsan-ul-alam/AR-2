@@ -1,0 +1,29 @@
+@media only screen and (max-width: 600px) {
+   #hero{
+    flex-direction: column-reverse;
+    height: fit-content;
+   }
+   
+    .video {
+        height: 100px !important;
+    }
+    .left{
+        padding: 0 !important;
+    }
+    .right , .inner-right{
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .services{
+        border-radius: 0 !important;
+    }
+
+
+
+
+
+
+
+
+}
