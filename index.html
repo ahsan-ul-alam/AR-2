@@ -13,20 +13,21 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="assets/css/blobinator.css">
 </head>
 
 <body>
   <div class="progressiveNav">
   </div>
-  <header class="border-gray-600 ">
+  <header id="header" class="border-gray-600 ">
     <!-- Navbar -->
     <nav class="bg-gray-950 border-bottom-2">
       <div class="max-w-7xl mx-auto px-4 py-2 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between">
+        <div class="flex items-center py-1 justify-between">
           <!-- Logo -->
           <div class="flex items-center">
             <a href="#" class="text-white text-lg font-semibold">
-              <img src="./assets/logo.png" style="height: 60px;" alt="">
+              <img src="./assets/logo.png" style="height: 50px;" alt="">
             </a>
           </div>
 
@@ -52,6 +53,9 @@
               </li>
               <li><a href="#"
                   class="text-gray-300 font-md hover:text-white uppercase hover:bg-gray-800 px-3 py-2  rounded-md transition ease-in-out delay-160">Contact</a>
+              </li>
+              <li><a href="#"
+                  class="px-3 py-2  nav-btn transition ease-in-out delay-160">Courses</a>
               </li>
             </ul>
           </div>
@@ -80,37 +84,39 @@
   <main>
     <!-- hero section  -->
     <!-- Hero Section -->
-    <div id="hero" class="text-white">
-      <!-- Left Column for Text and Button -->
-      <div class="left ">
-        <h1 class="text-3xl md:text-5xl lg:text-4xl font-bold">
-          <span class="institute">AR Web Academy</span> তে আপনাকে <br> <span class="boro">স্বাগতম</span>...
-        </h1>
-        <ul class="bangla mb-8 text-2xl md:text-xl mt-3 " style="line-height: 47px;">
-          <li>
-            <i class="fa fa-graduation-cap" style="color: rgb(124, 183, 245);"></i> আমরা আছি ২৪/৭ আপনাদের পাশে ।
-          </li>
-          <li>
-            <i class="fa fa-graduation-cap" style="color: rgb(124, 183, 245);"></i> সুদক্ষ ডেভেলপার দ্বারা ওয়েব
-            ডেভেলপমেন্ট প্রশিক্ষণ ।
-          </li>
-          <li>
-            <i class="fa fa-graduation-cap" style="color: rgb(124, 183, 245);"></i> প্রতিটি কোর্স এ রয়েছে বিশেষ মূল্য
-            ছাড় ।
-          </li>
+    <div id="circleArea">
+      <div id="hero" class="text-white animated-bg">
+        <!-- Left Column for Text and Button -->
+        <div class="left ">
+          <h1 class="text-3xl md:text-5xl lg:text-4xl font-bold">
+            <span class="institute">AR Web Academy</span> তে আপনাকে <br> <span class="boro">স্বাগতম</span>...
+          </h1>
+          <ul class="bangla mb-8 text-2xl md:text-xl mt-3 " style="line-height: 47px;">
+            <li>
+              <i class="fa fa-graduation-cap" style="color: rgb(124, 183, 245);"></i> আমরা আছি ২৪/৭ আপনাদের পাশে ।
+            </li>
+            <li>
+              <i class="fa fa-graduation-cap" style="color: rgb(124, 183, 245);"></i> সুদক্ষ ডেভেলপার দ্বারা ওয়েব
+              ডেভেলপমেন্ট প্রশিক্ষণ ।
+            </li>
+            <li>
+              <i class="fa fa-graduation-cap" style="color: rgb(124, 183, 245);"></i> প্রতিটি কোর্স এ রয়েছে বিশেষ মূল্য
+              ছাড় ।
+            </li>
 
-        </ul>
-        <a href="#course-details"
-          class="bangla bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300">
-          কোর্স সমূহ <i class="ml-2 fa fa-arrow-right"></i>
-        </a>
-      </div>
-      <!-- Right Column for Video -->
-      <div class="right ">
-        <div class="inner-right rounded-lg mx-auto">
-          <iframe class="video rounded-lg "
-            src="https://www.youtube.com/embed/5tKNLmii08g?list=PLr_bb67goom-cl1lYFaIK-9nzb5N4ADGI" frameborder="0"
-            allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </ul>
+          <a href="#course-details" id="rlf"
+            class="bangla bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300">
+            কোর্স সমূহ <i class="ml-2 fa fa-arrow-right"></i>
+          </a>
+        </div>
+        <!-- Right Column for Video -->
+        <div class="right ">
+          <div class="inner-right rounded-lg mx-auto">
+            <iframe class="video rounded-lg "
+              src="https://www.youtube.com/embed/5tKNLmii08g?list=PLr_bb67goom-cl1lYFaIK-9nzb5N4ADGI" frameborder="0"
+              allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -123,7 +129,7 @@
       <div class="py-5 px-8 text-center my-5">
         <h1 class="text-white mb-4 text-5xl">সেবা সমূহ</h1>
         <div class="underdevider mt-4"></div>
-        <p class="p-2 text-lg text-white">এক ঝলকে দেখে নিন আমাদের সেবা সমূহের তালিকা ।</p>
+        <p class="pt-2 text-lg text-white">এক ঝলকে দেখে নিন আমাদের সেবা সমূহের তালিকা ।</p>
       </div>
 
       <div class="container flex items-center content-center flex-wrap mx-auto">
@@ -131,22 +137,25 @@
         <div class="card rounded-lg py-4 px-5 bg-dark">
           <i class="fa-solid fa-desktop text-5xl text-white  service-icon rounded-md  mb-5"></i>
           <h1 class="text-3xl font-bold text-white my-5">ওয়েবসাইট তৈরি ...</h1>
-          <p class="text-md text-white pb-3">সুলভ মুল্যে যেকোনো ধরনের ওয়েবসাইট তৈরি করে নিতে যোগাযোগ করুন আমাদের সাথে । <br>
-         আমরা সর্বোচ্চ গুনমান নিশ্চিত করে থাকি ।
+          <p class="text-md text-white pb-3">সুলভ মুল্যে যেকোনো ধরনের ওয়েবসাইট তৈরি করে নিতে যোগাযোগ করুন আমাদের সাথে ।
+            <br>
+            আমরা সর্বোচ্চ গুনমান নিশ্চিত করে থাকি ।
           </p>
         </div>
 
         <div class="card rounded-lg py-4 px-5 bg-dark">
           <i class="fa-solid fa-graduation-cap text-5xl text-white  service-icon rounded-md  mb-5"></i>
           <h1 class="text-3xl font-bold text-white my-5">অনলাইন কোর্স ...</h1>
-          <p class="text-md text-white pb-3">ওয়েব ডিজাইন এন্ড ডেভেলপমেন্ট , ডিজিটাল মার্কেটিং , কন্টেন্ট মেকিং সহ আরও অনেক কোর্স পেয়ে যাবেন এই একটি প্লাটফর্ম এই ।</p>
+          <p class="text-md text-white pb-3">ওয়েব ডিজাইন এন্ড ডেভেলপমেন্ট , ডিজিটাল মার্কেটিং , কন্টেন্ট মেকিং সহ আরও
+            অনেক কোর্স পেয়ে যাবেন এই একটি প্লাটফর্ম এই ।</p>
         </div>
 
         <div class="card rounded-lg py-4 px-5 bg-dark">
           <i class="fa-solid fa-gear text-5xl text-white  service-icon rounded-md  mb-5"></i>
           <h1 class="text-3xl font-bold text-white my-5">সফটওয়্যার তৈরি ...</h1>
-          <p class="text-md text-white pb-3">সুলভ মুল্যে যেকোনো ধরনের সফটওয়্যার তৈরি করে নিতে যোগাযোগ করুন আমাদের সাথে । <br>
-         আমরা সর্বোচ্চ গুনমান নিশ্চিত করে থাকি ।
+          <p class="text-md text-white pb-3">সুলভ মুল্যে যেকোনো ধরনের সফটওয়্যার তৈরি করে নিতে যোগাযোগ করুন আমাদের সাথে ।
+            <br>
+            আমরা সর্বোচ্চ গুনমান নিশ্চিত করে থাকি ।
           </p>
         </div>
 
@@ -158,19 +167,22 @@
         <div class="card rounded-lg py-4 px-5 bg-dark">
           <i class="fa-solid fa-person text-5xl text-white  service-icon rounded-md  mb-5"></i>
           <h1 class="text-3xl font-bold text-white my-5">জনবল প্রদান ...</h1>
-          <p class="text-md text-white pb-3">আপনার প্রতিষ্ঠান টি যদি টেকনোলজি বেইজড হয়ে থাকে তবে তার জন্য দক্ষ জনবল খুজে নিতে পারেন এই প্লাটফর্ম এ ।</p>
+          <p class="text-md text-white pb-3">আপনার প্রতিষ্ঠান টি যদি টেকনোলজি বেইজড হয়ে থাকে তবে তার জন্য দক্ষ জনবল খুজে
+            নিতে পারেন এই প্লাটফর্ম এ ।</p>
         </div>
 
         <div class="card rounded-lg py-4 px-5 bg-dark">
           <i class="fa-solid fa-handshake-angle text-5xl text-white  service-icon rounded-md  mb-5"></i>
-          <h1 class="text-3xl font-bold text-white my-5">টেকনোলজি সাপোর্ট  ...</h1>
-          <p class="text-md text-white pb-3">আমরা বিনা মুল্যে টেকনোলজি বেইজড সাপোর্ট দিয়ে থাকি এর জন্য আপনাকে যুক্ত হতে হবে আমাদের ফেইসবুক ও ইউটিউব চ্যানেল এ ।</p>
+          <h1 class="text-3xl font-bold text-white my-5">টেকনোলজি সাপোর্ট ...</h1>
+          <p class="text-md text-white pb-3">আমরা বিনা মুল্যে টেকনোলজি বেইজড সাপোর্ট দিয়ে থাকি এর জন্য আপনাকে যুক্ত হতে
+            হবে আমাদের ফেইসবুক ও ইউটিউব চ্যানেল এ ।</p>
         </div>
 
         <div class="card rounded-lg py-4 px-5 bg-dark">
           <i class="fa-solid fa-chalkboard-user text-5xl text-white  service-icon rounded-md mb-5"></i>
           <h1 class="text-3xl font-bold text-white my-5">অনলাইন টিউশন ...</h1>
-          <p class="text-md text-white pb-3">ষষ্ঠ থেকে দশম (সকল বিষয়) , একাদশ - দ্বাদশ শ্রেণী (বিজ্ঞান বিভাগ) সহ CSE/SWE এর সকল বিষয়ে অনলাইন টিউশন ।</p>
+          <p class="text-md text-white pb-3">ষষ্ঠ থেকে দশম (সকল বিষয়) , একাদশ - দ্বাদশ শ্রেণী (বিজ্ঞান বিভাগ) সহ CSE/SWE
+            এর সকল বিষয়ে অনলাইন টিউশন ।</p>
         </div>
 
       </div>
@@ -179,7 +191,26 @@
     <!-- Service section ends here  -->
     <!-- ===================== -->
 
+    <!-- test here  -->
+    <div id="content">
+      <h1>jQuery Acarousel.js Cover Flow Style Carousel Advanced Example</h1>
+      <div id="carousel_container">
+        <ul id="carousel">
+          <li id="c1"><a href="#"><img src="./assets/img/img1.jpg"></a></li>
+          <li id="c2"><a href="#"><img src="./assets/img/img2.jpg"></a></li>
+          <li id="c3"><a href="#"><img src="./assets/img/img3.jpg"></a></li>
+          <li id="x1"><a href="#"><img src="./assets/img/img4.jpg"></a></li>
+          <li id="x1"><a href="#"><img src="./assets/img/img5.jpg"></a></li>
+          <li id="x1"><a href="#"><img src="./assets/img/img1.jpg"></a></li>
+          <li id="x1"><a href="#"><img src="./assets/img/img2.jpg"></a></li>
+          <li id="x2"><a href="#"><img src="./assets/img/img3.jpg"></a></li>
+          <li id="c4"><a href="#"><img src="./assets/img/img4.jpg"></a></li>
+          <li id="c5"><a href="#"><img src="./assets/img/img5.jpg"></a></li>
+        </ul>
+      </div>
 
+    </div>
+    <!-- test here  -->
 
 
 
@@ -196,7 +227,6 @@
   <footer>
 
   </footer>
-
   <script>
     // JavaScript to toggle mobile menu
     document.getElementById('mobile-menu-button').addEventListener('click', function () {
@@ -204,7 +234,73 @@
       mobileMenu.classList.toggle('hidden');
     });
   </script>
-<script defer src="./assets/js/custom.js"></script>
+
+  <script src="./assets/js/custom.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./assets/js/jquery.acarousel.min.js"></script>
+  <script>
+    $(function () {
+      var len = $("#carousel").children().length;
+      var acarousel = $("#carousel").acarousel({
+        moveStep: function (elem, index, pos_index, t) {
+          if (pos_index >= 3 && pos_index < len - 3 || pos_index == len - 3 && t == 0) {
+            elem.hide();
+          }
+        }
+      });
+
+      changeActive();
+
+      $("#carousel li a").click(function () {
+        var move = acarousel.moveByElem($(this).parent());
+        changeActive(move);
+        return false;
+      });
+
+      $("#move_back").click(function () {
+        var move = acarousel.move(1);
+        changeActive(move);
+        return false;
+      });
+
+      $("#move_next").click(function () {
+        var move = acarousel.move(-1);
+        changeActive(move);
+        return false;
+      });
+
+      $(".move").click(function () {
+
+        var pos = acarousel.getPos();
+        pos = pos.index % 5 + pos.point;
+        pos = parseInt($(".move").index(this)) - pos;
+
+        var diff1 = Math.abs(pos) % 5 * (pos < 0 ? 1 : -1);
+        var diff2 = (10 - (Math.abs(pos) + 5)) % 5 * (pos < 0 ? -1 : 1);
+
+        move = acarousel.move(Math.abs(diff1) < Math.abs(diff2) ? diff1 : diff2);
+        changeActive(move);
+        return false;
+      });
+
+      function changeActive(move) {
+        var index = acarousel.getPos(move).index % 5;
+        $(".move").removeClass("active").eq(index).addClass("active");
+      }
+
+      $(window).resize(function () {
+        var parent = $("#carousel_container");
+        var self = $("#carousel");
+        self.css({
+          left: parent.width() / 2 - self.width() / 2
+          , top: parent.height() / 2 - self.height() / 2
+        });
+      }).trigger("resize");
+
+    });
+  </script>
 </body>
 
 </html>

@@ -1,27 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap");
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+html {
     scroll-behavior: smooth;
     scrollbar-color: #6e0707 !important;
 }
 body {
-    font-family: 'noto serif bangla', sans-serif;
-    background: rgb(50,46,47);
-    background: linear-gradient(90deg, rgb(9, 9, 22) 0%, rgba(6,8,18,1) 51%, rgb(5, 5, 28) 100%);
+    font-family: "noto serif bangla", sans-serif;
+    background: rgb(50, 46, 47);
+    background: linear-gradient(90deg, rgb(9, 9, 22) 0%, rgba(6, 8, 18, 1) 51%, rgb(5, 5, 28) 100%);
 }
 header {
     position: fixed;
     width: 100%;
     border-bottom: 0.5px solid #fff;
     font-family: "Libre Franklin";
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
-main{
+main {
     padding-top: 75px;
 }
 #hero {
@@ -43,7 +43,7 @@ main{
 }
 .video {
     height: 400px !important;
-    width: 600px !important;
+    width: 650px !important;
     border: 2px solid #fff;
 }
 
@@ -60,40 +60,40 @@ main{
     width: 380px;
     background: #1d2336;
     margin: 5px 7px;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     cursor: pointer;
 }
-.card:hover{
+.card:hover {
     background: #1d253e;
     box-shadow: 0px 2px 4px rgb(27, 21, 98) inset;
 }
 .container {
     justify-content: space-around !important;
-    margin-top: 60px;
+    margin-top: 40px;
 }
-.services{
+.services {
     margin-top: 50px;
 }
-
-
-
-
-
-
 
 /* Additional css here  */
 /* ================================= */
 /* scrollbar change  */
 
-.progressiveNav{
+.progressiveNav {
     position: fixed;
     height: 3px;
     width: 100%;
-    background: linear-gradient(to right,rgb(241, 21, 21),rgb(46, 5, 252));
-    transition: .2s linear;
+    background: linear-gradient(to right, rgb(241, 21, 21), rgb(46, 5, 252));
+    transition: 0.2s linear;
     z-index: 999;
 }
-
+.nav-btn{
+    background: #3B82F6;
+    color: #fff;
+    text-shadow: -1px -1px 6px rgba(0,0,0,0.6);
+    font-weight: bold;
+    border-radius: 10px;
+}
 /* scrollbar change ends */
 .bangla {
     font-family: ahsanfont;
@@ -108,12 +108,12 @@ main{
     margin-top: 15px;
     margin-bottom: 10px;
 }
-.tinidevider{
+.tinidevider {
     width: 70%;
     margin: 5px auto;
     border: 1px double #10152b;
 }
-.underdevider{
+.underdevider {
     width: 300px;
     margin: 0 auto;
     margin-top: 20px;
@@ -121,17 +121,104 @@ main{
     border-bottom: 3px double white;
 }
 
-.service-icon{
+.service-icon {
     font-size: 22px;
-    background:#3758F9;
+    background: #3758f9;
     margin: auto auto;
     padding: 15px 10px;
     height: 50px;
-    width:50px;
+    width: 50px;
     text-align: center;
 }
-.institute{
+.institute {
     color: rgb(154, 7, 7);
     font-size: 60px;
-    text-shadow: 3px -1px 3px rgba(255,255,255,0.6);
+    text-shadow: 3px -1px 3px rgba(255, 255, 255, 0.6);
+}
+
+.sticky {
+    background: red;
+}
+
+/* slider here  */
+#content {
+    margin: 200px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+#carousel_container {
+    width: 95%;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#carousel {
+    width: 600px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#carousel li {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+#carousel li img {
+    width: 100%;
+    height: 100%;
+    box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+        border: 3px double #3b83f670;
+        border-radius: 10px;
+}
+
+#c1 {
+    width: 300px;
+    height: 250px;
+    left: 150px;
+    top: 25px;
+    z-index: 3;
+}
+#c2 {
+    width: 240px;
+    height: 200px;
+    left: 300px;
+    top: 50px;
+    z-index: 2;
+}
+#c3 {
+    width: 180px;
+    height: 150px;
+    left: 420px;
+    top: 75px;
+    z-index: 1;
+}
+#x1 {
+    width: 120px;
+    height: 100px;
+    left: 600px;
+    top: 100px;
+}
+#x2 {
+    width: 120px;
+    height: 100px;
+    left: -120px;
+    top: 100px;
+}
+#c4 {
+    width: 180px;
+    height: 150px;
+    left: 0px;
+    top: 75px;
+    z-index: 1;
+}
+#c5 {
+    width: 240px;
+    height: 200px;
+    left: 60px;
+    top: 50px;
+    z-index: 2;
 }
